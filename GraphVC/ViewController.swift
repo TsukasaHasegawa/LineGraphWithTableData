@@ -5,21 +5,46 @@
 //  Created by Tsukasa Hasegawa on 2016/08/24.
 //  Copyright © 2016年 Tsukasa Hasegawa. All rights reserved.
 //
-
 import UIKit
 
-class ViewController: UIViewController {
+var viewWidth:CGFloat!
+var viewHeight:CGFloat!
 
+let screenWidth:CGFloat = UIScreen.mainScreen().bounds.size.width
+let screenHeight:CGFloat = UIScreen.mainScreen().bounds.size.height
+
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        viewWidth = self.view.frame.width
+        viewHeight = self.view.frame.height
+        
+        let graphview = Graph() //グラフを表示するクラス
+        graphview.drawLineGraph() //グラフ描画開始
+        
+        _ = appDelegate.graphDatas
+        _ = appDelegate.labelDates
+        
+        self.view.addSubview(graphview)
+        
     }
-
-    override func didReceiveMemoryWarning() {
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(true)
+        let graphview = Graph()
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        _ = appDelegate.graphDatas
+        _ = appDelegate.labelDates
+        graphview.setNeedsDisplay()
+    }
+    
+    override func didReceiveMemoryWarning(){
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
-

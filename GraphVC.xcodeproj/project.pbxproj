@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		65E06B421D6CD3C6008574B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B411D6CD3C6008574B3 /* AppDelegate.swift */; };
 		65E06B441D6CD3C6008574B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B431D6CD3C6008574B3 /* ViewController.swift */; };
-		65E06B471D6CD3C6008574B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E06B451D6CD3C6008574B3 /* Main.storyboard */; };
 		65E06B491D6CD3C6008574B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65E06B481D6CD3C6008574B3 /* Assets.xcassets */; };
 		65E06B4C1D6CD3C6008574B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E06B4A1D6CD3C6008574B3 /* LaunchScreen.storyboard */; };
 		65E06B571D6CD3C6008574B3 /* GraphVCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B561D6CD3C6008574B3 /* GraphVCTests.swift */; };
 		65E06B621D6CD3C6008574B3 /* GraphVCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B611D6CD3C6008574B3 /* GraphVCUITests.swift */; };
+		65E06B701D6CD5D0008574B3 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B6F1D6CD5D0008574B3 /* GraphView.swift */; };
+		65E06B761D6D634B008574B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65E06B751D6D634B008574B3 /* Main.storyboard */; };
+		65E06B781D6DE3F6008574B3 /* GraphDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65E06B771D6DE3F6008574B3 /* GraphDataVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 		65E06B3E1D6CD3C6008574B3 /* GraphVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraphVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E06B411D6CD3C6008574B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65E06B431D6CD3C6008574B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		65E06B461D6CD3C6008574B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		65E06B481D6CD3C6008574B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65E06B4B1D6CD3C6008574B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		65E06B4D1D6CD3C6008574B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		65E06B5D1D6CD3C6008574B3 /* GraphVCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphVCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		65E06B611D6CD3C6008574B3 /* GraphVCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphVCUITests.swift; sourceTree = "<group>"; };
 		65E06B631D6CD3C6008574B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65E06B6F1D6CD5D0008574B3 /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		65E06B751D6D634B008574B3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
+		65E06B771D6DE3F6008574B3 /* GraphDataVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphDataVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,9 @@
 			children = (
 				65E06B411D6CD3C6008574B3 /* AppDelegate.swift */,
 				65E06B431D6CD3C6008574B3 /* ViewController.swift */,
-				65E06B451D6CD3C6008574B3 /* Main.storyboard */,
+				65E06B6F1D6CD5D0008574B3 /* GraphView.swift */,
+				65E06B771D6DE3F6008574B3 /* GraphDataVC.swift */,
+				65E06B751D6D634B008574B3 /* Main.storyboard */,
 				65E06B481D6CD3C6008574B3 /* Assets.xcassets */,
 				65E06B4A1D6CD3C6008574B3 /* LaunchScreen.storyboard */,
 				65E06B4D1D6CD3C6008574B3 /* Info.plist */,
@@ -229,9 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65E06B761D6D634B008574B3 /* Main.storyboard in Resources */,
 				65E06B4C1D6CD3C6008574B3 /* LaunchScreen.storyboard in Resources */,
 				65E06B491D6CD3C6008574B3 /* Assets.xcassets in Resources */,
-				65E06B471D6CD3C6008574B3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				65E06B441D6CD3C6008574B3 /* ViewController.swift in Sources */,
+				65E06B781D6DE3F6008574B3 /* GraphDataVC.swift in Sources */,
 				65E06B421D6CD3C6008574B3 /* AppDelegate.swift in Sources */,
+				65E06B701D6CD5D0008574B3 /* GraphView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		65E06B451D6CD3C6008574B3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				65E06B461D6CD3C6008574B3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		65E06B4A1D6CD3C6008574B3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,6 +482,7 @@
 				65E06B681D6CD3C6008574B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65E06B691D6CD3C6008574B3 /* Build configuration list for PBXNativeTarget "GraphVCTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +491,7 @@
 				65E06B6B1D6CD3C6008574B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65E06B6C1D6CD3C6008574B3 /* Build configuration list for PBXNativeTarget "GraphVCUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +500,7 @@
 				65E06B6E1D6CD3C6008574B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
