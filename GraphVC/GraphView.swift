@@ -27,7 +27,7 @@ class Graph: UIView {
     
     //グラフを描画するviewの大きさ
     func GraphFrame(){
-        self.backgroundColor = UIColor(red:0.972,  green:0.973,  blue:0.972, alpha:1)
+        self.backgroundColor = UIColor(red:0.7,  green:0.7,  blue:0.7, alpha:0.5)
         self.frame = CGRectMake(20 , 80, viewWidth - 40, viewHeight - 120)
     }
     
